@@ -1,0 +1,45 @@
+
+.slider{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider img{
+    display: none;
+    width: 600px;
+    height: 650px;
+}
+img.display{
+    display: block;
+    animation: feComposite;
+    animation-duration: 5s;
+    align-items: center;
+
+
+}
+.slider button{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(24, 19, 19, 0.482);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    padding:10px 15px px;
+}
+.PrevImg{
+    left:0;
+}
+.NextImg{
+    right:0;
+}
+@keyframes feComposite{
+    from {opacity: 0}
+    to{opacity:1 }
+}
+
